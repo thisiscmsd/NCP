@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Content</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+        <style>
+            li{
+                display: inline;
+
+            }
+            #container{margin: 0 auto; display:flex;}
+.box{background-color:white;
+  border:1px solid rgb(218, 204, 204);
+  margin-left:2%;
+  display:block;
+  box-sizing: border-box;
+}
+.column{
+  display:flex;
+  flex-direction:column;
+}
+h4{
+  color:rgb(223, 183, 53)
+}
+.panel-heading {
+  position: relative;
+}
+.panel-heading[data-toggle="collapse"]:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e080"; /* "play" icon */
+  position: absolute;
+  font-size: 18px;
+  line-height: 22px;
+  right: 20px;
+  top: calc(50% - 10px);
+
+  /* rotate "play" icon from > (right arrow) to down arrow */
+  -webkit-transform: rotate(-90deg);
+  -moz-transform:    rotate(-90deg);
+  -ms-transform:     rotate(-90deg);
+  -o-transform:      rotate(-90deg);
+  transform:         rotate(-90deg);
+}
+.panel-heading[data-toggle="collapse"].collapsed:after {
+  /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+  -webkit-transform: rotate(90deg);
+  -moz-transform:    rotate(90deg);
+  -ms-transform:     rotate(90deg);
+  -o-transform:      rotate(90deg);
+  transform:         rotate(90deg);
+}
+body{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+        </style>
+
+    </head>
+    <body>
+        <div id='container'>
+            <div class="column" style="width: 25%;margin-top: 1%;">
+              <div class='box1' style="height:30px;margin-left: 2%;"><a href="">Content Filters</a></div>
+              <div class='box' style="height:420px;margin-top: 2%;">
+                <div class="panel panel-info" style="display: block;max-width: 100%;margin:auto">
+                  <div class="panel-group" id="accordion" style="max-height:100%">
+                    <div class="panel panel-default">
+                      <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  data-target="#collapseOne">
+                        <h4 class="panel-title">Content Type</h4>
+            
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <ul>
+                            <li> <span>Activity</span><span style="padding-left: 180px;"><input type="checkbox" ></span></br></li>
+                            <li><span>Course</span><span style="padding-left: 197px;"><input type="checkbox" ></span></br> </li>
+                            <li><span>Module</span><span style="padding-left: 196px;"><input type="checkbox" ></span></br></li>
+                          </ul>
+                     
+                        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse"   data-target="#collapseTwo">
+                        <h4 class="panel-title">Accrediation</h4>
+            
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <ul>
+                            <li> <span>Degree Approved</span><span style="padding-left: 130px;"><input type="checkbox" ></span></br></li>
+                            
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse"  data-target="#collapseThree">
+                        <h4 class="panel-title">Category</h4>
+            
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <ul>
+                            <li> <span>Archtiecture</span><span style="padding-left: 147px;"><input type="checkbox" ></span></br></li>
+                            <li><span>Computing</span><span style="padding-left: 171px;"><input type="checkbox" ></span></br> </li>
+                            <li><span>Database</span><span style="padding-left: 179px;"><input type="checkbox" ></span></br></li>
+                          </ul>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column" style="width:75%;margin-top: 1%;">
+              <div class='box1' style="height:30px;margin-left: 2%; "><span>Showing 5 of 12 results </span><span style="float: right;"><a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+              </span></div>
+              <div class='box' style="height:110px;margin-top:10px ;margin-right: 1%;"><h4>Data Analaysis:Data Dilemna</h4>
+              <span style="color: grey;">Cloud Computing | Module 2hours</span>
+              <span style="float: right;padding-right: 1%;"><a href="">Add to My content</a></span>
+
+              <p>
+                Students are Introduced to Big Data and Cloud Computing
+              </p>
+              <span style="color: grey;">Last Updated July 6 |PDF</span>
+              </div>
+              <div class='box' style="height:120px;margin-top:10px ;margin-right: 1%;"><h4>Web Development Engineer and educator Guide</h4>
+                <span style="color: grey;">Cloud Computing | Module 2hours</span>
+                <span style="float: right;padding-right: 1%;"><a href="">Add to My content</a></span>
+  
+                <p>
+                  Students are Introduced to Big Data and Cloud Computing
+                </p>
+                <span style="color: grey;">Last Updated July 6 |PDF</span>
+              </div>
+            </div>
+        </div>
+
+    </body>
+</html>
