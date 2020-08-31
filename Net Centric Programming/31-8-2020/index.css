@@ -1,0 +1,29 @@
+h1{
+    color: blue;
+    padding-left: 75px;
+}
+body{
+    font-style: oblique;
+    font-family: serif;
+    text-align: center;
+    background-color: peachpuff;
+}
+
+label{
+    color:red;
+    display: inline-block;
+    width: 250px;
+}
+
+select{
+    width: 165px;
+    height: 22px;
+}
+
+
+
+
+div{
+    padding: 5px;
+}
+
