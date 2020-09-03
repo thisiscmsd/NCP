@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chapters page</title>
+    <style>
+        ul.leaders {
+        max-width: 37em;
+        padding: 0;
+        overflow-x: hidden;
+        list-style: none;
+        }
+        ul.leaders li:before {
+        float: left;
+        width: 0;
+        white-space: nowrap;
+        color: black;
+        content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+        }
+        ul.leaders span:first-child {
+        font-weight: bold;
+        letter-spacing: 2px;
+        /* padding-right: 0.33em; */
+        background: white;
+        }
+        ul.leaders span + span {
+        float: right;
+        font-weight: bold;
+        /* padding-left: 0.33em; */
+        background: white;
+        }
+
+        
+
+    </style>
+    <script type="text/javascript">
+
+    var chap = prompt("Enter the Number of Chapters");
+    
+    if(chap < 3)  alert("Minimum Number of Chapters must be THREE");
+    
+    else if(chap >= 3)   contentChap(chap);
+
+    else alert("Wrong Input");
+
+    function contentChap(chap)
+    {
+        var count = 0;
+        var output = "<section class='container'>";
+        output = output + "<h1> Index </h1>";
+        output = output + "<ul class='leaders'>";
+        
+        while(chap-->0)
+        {
+            var title = prompt("Enter Title");
+            var pageNo = prompt("Enter the Page Number");
+            count+=1
+            output = output + "<li>";
+            output = output + "<span>";
+            output = output + count +". " +title;
+            output = output + "</span>";
+            output = output + "<span>";
+            output = output + pageNo;
+            output = output + "</span>";
+            output = output + "</li>"; 
+        }
+        output = output + "</ul>";
+        output = output + "</section>";
+        document.write(output);
+    }
+    </script>
+</head>
+<body>
+</body>
+</html>

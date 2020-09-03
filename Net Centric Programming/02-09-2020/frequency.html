@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <title>Frequency</title>
+  
+ 
+
+</head>
+
+<body>
+
+<h1>Frequency Table</h1>
+
+<script>
+    var x = 10;
+    array = [];
+    num=[1,2,3,4,5]
+
+    for (i = 0; i < 10; i++) 
+    { 
+        array[i] = Math.floor(Math.random() * 5) + 1; 
+    }
+
+    foo(array);
+
+    function foo(arr) 
+    {
+        var a = [], b = [], prev;
+
+        arr.sort();
+        for ( var i = 0; i < arr.length; i++ ) 
+        {
+            if ( arr[i] !== prev ) {
+                a.push(arr[i]);
+                b.push(1);
+            } else {
+                b[b.length-1]++;
+            }
+            prev = arr[i];
+    }
+    print(a,b);
+    }
+    
+    function print(a, b)
+    {
+        var j = 1;
+        var i = 1;
+        var output = "<table border='1' width='500' cellspacing='0' cellpadding='5'>";
+    
+        while(i-->0)
+        {
+            output = output + "<tr>";
+            for(j=0;j<a.length;j++)
+            {
+            output = output + "<td>" + a[j] + "</td>";
+            }
+
+            output = output + "</tr>";
+
+            for(j=0;j<a.length;j++)
+            {
+                for(k=0;k<5;k++)
+                {
+                    if(a[j]==num[k])
+                    {
+                        output = output + "<td>" + b[j] + "</td>";
+                    }
+                }
+            }
+            output = output + "</tr>";
+        }
+        output = output + "</table>";
+
+        document.write(output);
+    }
+
+</script>
+
+</body>
+</html>
