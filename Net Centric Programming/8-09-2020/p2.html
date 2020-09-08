@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        p2
+    </title>
+    <script>
+           function Validate() {
+            var letters = /^[A-Za-z\s]+$/;
+            var password = document.getElementById("pass").value;
+        var confirmPassword = document.getElementById("cpass").value;
+            if(document.getElementById("fname").value=="" || document.getElementById("lname").value=="")
+            {
+                alert("Name cannot be empty");
+                return false;
+            }
+            if(!document.getElementById("fname").value.match(letters) || !document.getElementById("lname").value.match(letters))
+            {
+                alert("Name should contain anly alphabets");
+                return false;
+
+            }
+            if (password="" || confirmPassword=="")
+            {
+                alert("Password cannot be empty");
+                return false;
+            }
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+    window.onload = function dates () {
+        var element = document.getElementById('preh').innerHTML;
+        var content = ".........";
+        element.innerHTML += content.toString();
+    }
+
+   
+    </script>
+    <link rel="stylesheet" href="mystyle.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <body>
+        <span id="demo"></span>
+        <span style="float: right;">Google Accounts</span>
+
+        <script>
+            var d= new Date()
+             document.getElementById("demo").innerHTML =   '<span>'+d.getDay() + '/'+ d.getMonth()+ '/' + d.getFullYear() + '</span>';
+        </script>
+        <div class="head">
+            <img src="gg.png" alt="google2" style="height: 50px;width: 50px;" class="gg" />
+            <span style="float: right;padding: 10px ;">Sign in</span>
+        </div>
+        <header style="color: red;font-size: 40px;padding-left: 80px;">
+            Create New Google Account
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+        <table style="padding-top: 20px;">
+            <tr style="padding-top: 20px;">
+                <td >
+                    <img src="Capture.PNG" style="width: 250px;height: 300x; ;">
+                </td>
+                </td>
+                <td  >
+                    <p style="font: bold;font-size: 30px;">Your Google is account is more than just gmail</p>
+                    <p>
+                    Create a Gmail account</br>
+                    To sign up for Gmail, create a Google Account.</br>
+                     You can use the username and password to sign in to Gmail and other Google products like YouTube, Google Play, and Google Drive.Go to the Google Account creation page.
+                     Follow the steps on the screen to set up your account.</br>
+                     Use the account you created to sign in to Gmail.
+                    </p>
+                </td>
+            </tr>
+            <tr style="padding-top: 20px;";">
+                <td>
+                    <img src="Capture1.png" style="width: 250px;height: 300x; ;">
+                </td>
+                <td>
+                    <p style="font: bold;font-size: 30px;">Take it all with you</p>
+                    <p>
+                    Create a Gmail account</br>
+                    To sign up for Gmail, create a Google Account.</br>
+                     You can use the username and password to sign in to Gmail and other Google products like YouTube, Google Play, and Google Drive.Go to the Google Account creation page.
+                     Follow the steps on the screen to set up your account.</br>
+                     Use the account you created to sign in to Gmail.
+                    </p>
+
+                </td>
+            </tr>
+            <tr style="padding: 20px;">
+                <td >
+                    <img src="Capture3.png" style="width: 250px;height: 300x; ;">
+
+                </td>
+                <td>
+                    <p style="font: bold;font-size: 30px;">Share a little .Or. Share a lot</p>
+                    <p>
+                    Create a Gmail account</br>
+                    To sign up for Gmail, create a Google Account.</br>
+                     You can use the username and password to sign in to Gmail and other Google products like YouTube, Google Play, and Google Drive.Go to the Google Account creation page.
+                     Follow the steps on the screen to set up your account.</br>
+                     Use the account you created to sign in to Gmail.
+                    </p>
+
+                </td>
+            </tr>
+            <tr style="padding: 20px;">
+                <td >
+                    <img src="manc.jpg" style="width: 250px;height: 300x; ;">
+
+                </td>
+                <td>
+                    <p style="font: bold;font-size: 30px;">Work in the Future</p>
+                    <p>
+                    Create a Gmail account</br>
+                    To sign up for Gmail, create a Google Account.</br>
+                     You can use the username and password to sign in to Gmail and other Google products like YouTube, Google Play, and Google Drive.Go to the Google Account creation page.
+                     Follow the steps on the screen to set up your account.</br>
+                     Use the account you created to sign in to Gmail.
+                    </p>
+
+                </td>
+            </tr>
+        </table>
+        </div>
+        <div class="col2">
+            <form action="congrats.html">
+                <div >
+                    <div class="fele">
+                        <label>Name</label></br>
+                        <input  id="fname" type="text" placeholder="First name" >
+                        <input id="lname" type="text" placeholder="Last name" style="width: 135px;"></br>
+                    </div>
+                    <div class="fele">
+                        <label>Username</label></br>
+                        <input name="username" type="email" placeholder="@gmail.com" style="width: 100%;" ></br>
+                    </div>
+                    <div class="fele">
+                        <label>Create password</label></br>
+                        <input name="password" id="pass" type="password" style="width: 100%;" >
+                    </div>
+                    <div class="fele">
+                        <label>Confirm password</label></br>
+                        <input name="cpassword" id="cpass" type="password" style="width: 100%;">
+                    </div>
+                    <div class="fele">
+                        <label>Birthday</label></br>
+                        <select id="month" name="month">
+                            <option value=1 selected>JAN</option>
+                            <option value=2>FEB</option>
+                            <option value=3>MAR</option>
+                            <option value=4>APR</option>
+                            <option value=5>MAY</option>
+                            <option value=6>JUN</option>
+                            <option value=7>JUL</option>
+                            <option value=8>AUG</option>
+                            <option value=9>SEP</option>
+                            <option value=10>OCT</option>
+                            <option value=11>NOV</option>
+                            <option value=12>DEC</option>
+    
+                        </select>
+                        <input name="day" type="date" placeholder="Day" style="width: 80px;">
+                        <input name="year" type="number" placeholder="Year">
+                    </div>
+                    <div class="fele">
+                        <label>Gender</label></br>
+                        <select id="gender" name="gender" style="width: 100%;">
+                            <option value="sel" disabled selected >I-am</option>
+                            <option value="male" >Male</option>
+                            <option value="female" >Female</option>
+                            <option value="other" >Other</option>
+                            <option value="dnn" selected >Do not wish to enclose</option>
+                        </select>
+                    </div>
+                    <div class="fele">
+                        <label>Phone Number</label></br>
+                        <select name="countryCode" class="sel">
+                            <option data-countryCode="IND" value="44" Selected>IND (+91)</option>
+                            <option data-countryCode="US" value="1">USA (+1)</option>
+                            <optgroup label="Other countries">
+                                <option data-countryCode="DZ" value="213">Algeria (+213)</option>
+                                <option data-countryCode="AD" value="376">Andorra (+376)</option>
+                                <option data-countryCode="AO" value="244">Angola (+244)</option>
+                                <option data-countryCode="AI" value="1264">Anguilla (+1264)</option>
+                                <option data-countryCode="AG" value="1268">Antigua &amp; Barbuda (+1268)</option>
+                                <option data-countryCode="AR" value="54">Argentina (+54)</option>
+                                <option data-countryCode="AM" value="374">Armenia (+374)</option>
+                                <option data-countryCode="AW" value="297">Aruba (+297)</option>
+                                <option data-countryCode="AU" value="61">Australia (+61)</option>
+                                <option data-countryCode="AT" value="43">Austria (+43)</option>
+                                <option data-countryCode="AZ" value="994">Azerbaijan (+994)</option>
+                                <option data-countryCode="BS" value="1242">Bahamas (+1242)</option>
+                                <option data-countryCode="BH" value="973">Bahrain (+973)</option>
+                                <option data-countryCode="BD" value="880">Bangladesh (+880)</option>
+                                <option data-countryCode="BB" value="1246">Barbados (+1246)</option>
+                                <option data-countryCode="BY" value="375">Belarus (+375)</option>
+                                <option data-countryCode="BE" value="32">Belgium (+32)</option>
+                                <option data-countryCode="BZ" value="501">Belize (+501)</option>
+                                <option data-countryCode="BJ" value="229">Benin (+229)</option>
+                                <option data-countryCode="BM" value="1441">Bermuda (+1441)</option>
+                                <option data-countryCode="BT" value="975">Bhutan (+975)</option>
+                                <option data-countryCode="BO" value="591">Bolivia (+591)</option>
+                                <option data-countryCode="BA" value="387">Bosnia Herzegovina (+387)</option>
+                                <option data-countryCode="BW" value="267">Botswana (+267)</option>
+                                <option data-countryCode="BR" value="55">Brazil (+55)</option>
+                                <option data-countryCode="BN" value="673">Brunei (+673)</option>
+                                <option data-countryCode="BG" value="359">Bulgaria (+359)</option>
+                                <option data-countryCode="BF" value="226">Burkina Faso (+226)</option>
+                                <option data-countryCode="BI" value="257">Burundi (+257)</option>
+                                <option data-countryCode="KH" value="855">Cambodia (+855)</option>
+                                <option data-countryCode="CM" value="237">Cameroon (+237)</option>
+                                <option data-countryCode="CA" value="1">Canada (+1)</option>                                                        
+                            </optgroup>
+                        </select>
+                        <input name="num" type="number" style="width: 80%;" required>
+                    </div>
+                    <div class="fele">
+                        <label>Email</label></br>
+                        <input name="email" type="email" style="width: 100%;" required>
+                    </div>
+                    <div class="fele">
+                        <label style="font:bolder;;" for="skip">Prove not a robot</label></br> 
+                        <input type="checkbox" id="skip" style="padding: 20px;" >skip captcha(phone number required)
+                    </div>
+                    
+                    <div class="fele" style="background-color:wheat;">
+                        <img src="Captcha2-Bh8.png" alt="capcthca" height="50px" width="100px" class="captcha"/>
+                        
+                        <input type="text" placeholder="enter captcha" pattern="E5XCN" style="width: 100%;margin-top: 5px;" required>
+                    </div>
+                    <div class="fele">
+                        <label>Location</label></br>
+                        <select id="location" style="width: 100%;" required>
+                            <option value="india" selected>India</option>
+                        </select>
+                    </div>
+                    <div class="fele">
+                        <div>
+                        
+                        <input id="terms" type="checkbox" ><label for="terms" required>Accept to Terms and Condions</label></div>
+                        <input type="checkbox" ><label>Google may use my details for personalisation and Content Reccomendation</label>
+                    </div>
+                    <div style="padding-bottom: 30px;">
+                        <input style="float: right;background-color: rgb(32, 102, 233);margin-right: 2%;color: aliceblue;" type="submit" value="Next Step"  onclick="return Validate() ">   
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    <hr>
+        <footer>
+            <pre>@2013 Google   Terms of Service   Privacy Policy   Help     <select style="float: right;" name="language-picker-select" id="language-picker-select">
+                <option lang="de" value="deutsch">Deutsch</option>
+                <option lang="en" value="english" selected>English</option>
+                <option lang="fr" value="francais">Français</option>
+                <option lang="it" value="italiano">Italiano</option>
+                <!-- other language options -->
+              </select></pre>                 </footer>
+    </body>
+</html>

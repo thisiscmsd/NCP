@@ -1,0 +1,59 @@
+
+        img {
+    float: left;
+    width:  250px;
+    height: 300px;
+    object-fit: cover;
+}
+table,td,tr{
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+}
+td{
+    max-width: 700px;
+}
+tr{
+    height: 100px;
+}
+.row{
+    display: flex;
+    margin-right: 5%;
+}
+.col2{
+    margin-top: 1%;
+    height: 1400px;
+    width: 30%;
+    border-radius: 2%;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+input,select{
+    border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 25px;
+}
+[type=checkbox]{
+    vertical-align: middle;
+}
+.fele{
+    padding:8%;
+}
+.sel{
+    width:50px;
+}
+.captcha{
+    height: 75%;
+    width:100%;
+}
+.head{
+    background-color: #f2f2f2;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+.gg{
+    padding-block: 5%;
+    text-align: center;
+}
