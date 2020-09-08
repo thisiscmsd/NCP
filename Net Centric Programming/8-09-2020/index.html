@@ -10,28 +10,26 @@
             var password = document.getElementById("pass").value;
         var confirmPassword = document.getElementById("cpass").value;
         var captcha="E5KXCN"
-            if(document.getElementById("fname").value=="" || document.getElementById("lname").value=="")
+            if(document.getElementById("fname").value=="")
             {
                 alert("Name cannot be empty");
-                return false;
-            }
-            if(!document.getElementById("fname").value.match(letters) )
-            {
-                alert("Name should contain anly alphabets");
                 setTimeout(function() {
       document.getElementById('fname').focus();
     }, 0);
                 return false;
-
             }
-            if(!document.getElementById("lname").value.match(letters))
+            if(!document.getElementById("lname").value.match(letters) )
             {
                 alert("Name should contain anly alphabets");
                 setTimeout(function() {
       document.getElementById('lname').focus();
     }, 0);
+                return false;
 
             }
+        
+
+            
             if (password=="" || confirmPassword=="")
             {
                 alert("Password cannot be empty");
