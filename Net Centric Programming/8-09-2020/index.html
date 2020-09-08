@@ -9,6 +9,7 @@
             var letters = /^[A-Za-z\s]+$/;
             var password = document.getElementById("pass").value;
         var confirmPassword = document.getElementById("cpass").value;
+        var captcha="E5KXCN"
             if(document.getElementById("fname").value=="" || document.getElementById("lname").value=="")
             {
                 alert("Name cannot be empty");
@@ -29,15 +30,14 @@
             alert("Passwords do not match.");
             return false;
         }
+        if(!document.getElementById("cap").value.match(captcha))
+        {
+            alert("please match pattern in box")
+            return false;
+        }
         return true;
     }
-    window.onload = function dates () {
-        var element = document.getElementById('preh').innerHTML;
-        var content = ".........";
-        element.innerHTML += content.toString();
-    }
-
-   
+    
     </script>
     <link rel="stylesheet" href="mystyle.css">
     
@@ -235,7 +235,7 @@
                     <div class="fele" style="background-color:wheat;">
                         <img src="Captcha2-Bh8.png" alt="capcthca" height="50px" width="100px" class="captcha"/>
                         
-                        <input type="text" placeholder="enter captcha" pattern="E5XCN" style="width: 100%;margin-top: 5px;" required>
+                        <input  id="cap" type="text" placeholder="enter captcha"  style="width: 100%;margin-top: 5px;" required>
                     </div>
                     <div class="fele">
                         <label>Location</label></br>
